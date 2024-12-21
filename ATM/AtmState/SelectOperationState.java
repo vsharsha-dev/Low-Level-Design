@@ -1,8 +1,8 @@
-package ATM.AtmState;
+package LowLevelDesign.ATM.AtmState;
 
-import ATM.AtmMachine;
-import ATM.Card;
-import ATM.OperationType;
+import LowLevelDesign.ATM.AtmMachine;
+import LowLevelDesign.ATM.Card;
+import LowLevelDesign.ATM.OperationType;
 
 public class SelectOperationState extends AtmState {
     public SelectOperationState() {

@@ -1,4 +1,4 @@
-package ATM;
+package LowLevelDesign.ATM;
 
 public class BankAccount {
     String accountNumber;
@@ -12,5 +12,17 @@ public class BankAccount {
     public void withdrawMoney(int amount) {
         accountBalance -= amount;
         System.out.println("Balance in the Bank Account is Rs."+accountBalance);
+    }
+
+    public int getBalance() {
+        return accountBalance;
+    }
+
+    public void setBalance(int amount) {
+        accountBalance = amount;
+    }
+
+    public void withdrawAmount(int amount){
+        setBalance(accountBalance - amount);
     }
 }

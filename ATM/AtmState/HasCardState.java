@@ -1,12 +1,12 @@
-package ATM.AtmState;
+package LowLevelDesign.ATM.AtmState;
 
-import ATM.AtmMachine;
-import ATM.Card;
+import LowLevelDesign.ATM.AtmMachine;
+import LowLevelDesign.ATM.Card;
 
 public class HasCardState extends AtmState {
     @Override
     public void authenticateCard(AtmMachine atm, Card card, String pin){
-        if(Integer.valueOf(pin) == Integer.valueOf(card.getAtmPin())){
+        if(Integer.valueOf(pin).equals(Integer.valueOf(card.getAtmPin()))){
             System.out.println("Authenticating...");
             atm.setAtmState(new SelectOperationState());
         }

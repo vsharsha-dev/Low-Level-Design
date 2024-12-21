@@ -1,4 +1,4 @@
-package ATM;
+package LowLevelDesign.ATM;
 
 public enum OperationType {
     CASH_WITHDRAWAL,

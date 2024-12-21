@@ -1,7 +1,7 @@
-package ATM.AtmState;
+package LowLevelDesign.ATM.AtmState;
 
-import ATM.AtmMachine;
-import ATM.Card;
+import LowLevelDesign.ATM.AtmMachine;
+import LowLevelDesign.ATM.Card;
 
 public class IdleState extends AtmState{
     @Override

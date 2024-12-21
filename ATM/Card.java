@@ -1,4 +1,4 @@
-package ATM;
+package LowLevelDesign.ATM;
 
 public class Card {
     String cardNumber;
@@ -13,5 +13,9 @@ public class Card {
 
     public String getAtmPin(){
         return atmPin;
+    }
+
+    public BankAccount getUserBankAccount(){
+        return cardUser.getBankAccount();
     }
 }

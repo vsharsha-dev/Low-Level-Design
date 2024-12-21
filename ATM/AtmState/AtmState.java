@@ -1,8 +1,8 @@
-package ATM.AtmState;
+package LowLevelDesign.ATM.AtmState;
 
-import ATM.AtmMachine;
-import ATM.Card;
-import ATM.OperationType;
+import LowLevelDesign.ATM.AtmMachine;
+import LowLevelDesign.ATM.Card;
+import LowLevelDesign.ATM.OperationType;
 
 public abstract class AtmState {
     public void insertCard(AtmMachine atm, Card card){
@@ -21,9 +21,9 @@ public abstract class AtmState {
         System.out.println("Could not withdraw the amount. ATM not in correct state.");
     }
     public void removeCard(){
-        System.out.println("Could not insert card. ATM not in correct state.");
+        System.out.println("Could not remove card. ATM not in correct state.");
     }
     public void exit(AtmMachine atm){
-        System.out.println("Could not insert card. ATM not in correct state.");
+        System.out.println("Could not exit. ATM not in correct state.");
     }
 }
