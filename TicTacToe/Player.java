@@ -2,7 +2,7 @@ public class Player {
   String playerName;
   Symbol playerSymbol;
 
-  Player(String name, Symbol symbol){
+  public Player(String name, Symbol symbol){
     this.playerName = name;
     this.playerSymbol = symbol;
   }
